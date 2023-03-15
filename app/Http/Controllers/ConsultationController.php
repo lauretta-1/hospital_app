@@ -12,7 +12,7 @@ class ConsultationController extends Controller
     // Consultation History
     public function index($patient_id){
         $patient = Patient::whereId($patient_id)->first();
-        $consultations = Consultation::where('patient_id', $patient->id)->get();
+        $consultations = $patient->consultations()->latest()->get();
 
         return view('consultation.index', compact('consultations'));
     }
