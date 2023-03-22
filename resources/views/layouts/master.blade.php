@@ -38,6 +38,7 @@
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="{{route('consultations.add')}}">Consultations</a>
 						<a class="dropdown-item" href="{{route('patients.index')}}">Patients</a>
+                        <a class="dropdown-item" href="{{route('logout')}}">Logout</a>
 					</div>
                 </li>
             </ul>
