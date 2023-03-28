@@ -11,7 +11,7 @@
                 @endforeach
             </div>
         @endif
-        
+
         @if (session()->has('flash_message'))
         <div class="alert alert-success">{{ \Session::get('flash_message') }}</div>
         @endif
@@ -29,6 +29,58 @@
         <div class="col-md-9" style="margin-left:10px;">
             <form id="consultation-form" method="post" action="{{route('consultations.store',$patient->uuid)}}">
                 @csrf
+                <h4>VITALS</h4>
+                <br>
+                <div class="row mb-15px">
+                    <label for="weight" class="form-label col-form-label col-md-3">Weight</label>
+                    <div class="col-md-9">
+                        <input type="number" name="weight" class="form-control mb-5px" id="weight" style="border:0; outline:0; background:transparent; border-bottom:1px solid black;"/>
+                    </div>
+                </div><br>
+                <div class="row mb-15px">
+                    <label for="height" class="form-label col-form-label col-md-3">Height</label>
+                    <div class="col-md-9">
+                        <input type="number" name="height" class="form-control mb-5px" id="height" style="border:0; outline:0; background:transparent; border-bottom:1px solid black;"/>
+                    </div>
+                </div><br>
+                <div class="row mb-15px">
+                    <label for="temperature" class="form-label col-form-label col-md-3">Temperature</label>
+                    <div class="col-md-9">
+                        <input type="number" name="temperature" class="form-control mb-5px" id="temperature" style="border:0; outline:0; background:transparent; border-bottom:1px solid black;"/>
+                    </div>
+                </div><br>
+                <div class="row mb-15px">
+                    <label for="pain_score" class="form-label col-form-label col-md-3">Pain Score</label>
+                    <div class="col-md-9">
+                        <input type="number" name="pain_score" class="form-control mb-5px" id="pain_score" style="border:0; outline:0; background:transparent; border-bottom:1px solid black;"/>
+                    </div>
+                </div><br>
+                <div class="row mb-15px">
+                    <label for="blood_pressure" class="form-label col-form-label col-md-3">Blood Pressure</label>
+                    <div class="col-md-9">
+                        <input type="text" name="blood_pressure" class="form-control mb-5px" id="blood_pressure" style="border:0; outline:0; background:transparent; border-bottom:1px solid black;"/>
+                    </div>
+                </div><br>
+                <div class="row mb-15px">
+                    <label for="pulse_rate" class="form-label col-form-label col-md-3">Pulse Rate</label>
+                    <div class="col-md-9">
+                        <input type="text" name="pulse_rate" class="form-control mb-5px" id="pulse_rate" style="border:0; outline:0; background:transparent; border-bottom:1px solid black;"/>
+                    </div>
+                </div><br>
+                <div class="row mb-15px">
+                    <label for="oxygen_saturation" class="form-label col-form-label col-md-3">Oxygen Saturation</label>
+                    <div class="col-md-9">
+                        <input type="text" name="oxygen_saturation" class="form-control mb-5px" id="oxygen_saturation" style="border:0; outline:0; background:transparent; border-bottom:1px solid black;"/>
+                    </div>
+                </div><br>
+                <div class="row mb-15px">
+                    <label for="oxygen_saturation" class="form-label col-form-label col-md-3">Others</label>
+                    <div class="col-md-9">
+                        <textarea class="form-control mb-5px" id="others" name="others"></textarea>
+                    </div>
+                </div>
+                <hr>
+                <h4>EXAMINATIONS</h4>
                 <div class="row mb-15px">
                     <label for="general_physical_examination" class="form-label col-form-label col-md-3">{{ 'Genral physical Examination' }}</label>
                     <div class="col-md-9">
@@ -117,56 +169,7 @@
                         <input type="number" class="form-control mb-5px" name="cost_of_consultation" id="cost_of_consultation" style="border:0; outline:0; background:transparent; border-bottom:1px solid black;"/>
                     </div>
                 </div>
-                <hr>
-                <h4>VITALS</h4>
-                <div class="row mb-15px">
-                    <label for="weight" class="form-label col-form-label col-md-3">Weight</label>
-                    <div class="col-md-9">
-                        <input type="number" name="weight" class="form-control mb-5px" id="weight" style="border:0; outline:0; background:transparent; border-bottom:1px solid black;"/>
-                    </div>
-                </div><br>
-                <div class="row mb-15px">
-                    <label for="height" class="form-label col-form-label col-md-3">Height</label>
-                    <div class="col-md-9">
-                        <input type="number" name="height" class="form-control mb-5px" id="height" style="border:0; outline:0; background:transparent; border-bottom:1px solid black;"/>
-                    </div>
-                </div><br>
-                <div class="row mb-15px">
-                    <label for="temperature" class="form-label col-form-label col-md-3">Temperature</label>
-                    <div class="col-md-9">
-                        <input type="number" name="temperature" class="form-control mb-5px" id="temperature" style="border:0; outline:0; background:transparent; border-bottom:1px solid black;"/>
-                    </div>
-                </div><br>
-                <div class="row mb-15px">
-                    <label for="pain_score" class="form-label col-form-label col-md-3">Pain Score</label>
-                    <div class="col-md-9">
-                        <input type="number" name="pain_score" class="form-control mb-5px" id="pain_score" style="border:0; outline:0; background:transparent; border-bottom:1px solid black;"/>
-                    </div>
-                </div><br>
-                <div class="row mb-15px">
-                    <label for="blood_pressure" class="form-label col-form-label col-md-3">Blood Pressure</label>
-                    <div class="col-md-9">
-                        <input type="text" name="blood_pressure" class="form-control mb-5px" id="blood_pressure" style="border:0; outline:0; background:transparent; border-bottom:1px solid black;"/>
-                    </div>
-                </div><br>
-                <div class="row mb-15px">
-                    <label for="pulse_rate" class="form-label col-form-label col-md-3">Pulse Rate</label>
-                    <div class="col-md-9">
-                        <input type="text" name="pulse_rate" class="form-control mb-5px" id="pulse_rate" style="border:0; outline:0; background:transparent; border-bottom:1px solid black;"/>
-                    </div>
-                </div><br>
-                <div class="row mb-15px">
-                    <label for="oxygen_saturation" class="form-label col-form-label col-md-3">Oxygen Saturation</label>
-                    <div class="col-md-9">
-                        <input type="text" name="oxygen_saturation" class="form-control mb-5px" id="oxygen_saturation" style="border:0; outline:0; background:transparent; border-bottom:1px solid black;"/>
-                    </div>
-                </div><br>
-                <div class="row mb-15px">
-                    <label for="oxygen_saturation" class="form-label col-form-label col-md-3">Others</label>
-                    <div class="col-md-9">
-                        <textarea class="form-control mb-5px" id="others" name="others"></textarea>
-                    </div>
-                </div><br>
+                <br>
                 <div class="m-t-20 text-right">
                     <button type="submit" class="btn btn-primary submit-btn">Submit</button>
                 </div>

@@ -170,96 +170,8 @@
                                                 @csrf
                                             @endif
                                                 <br>
-                                                <div class="row mb-15px">
-                                                    <label for="general_physical_examination" class="form-label col-form-label col-md-3">{{ 'Genral physical Examination' }}</label>
-                                                    <div class="col-md-9">
-                                                        <textarea class="form-control mb-5px message-box" id="general_physical_examination" name="general_physical_examination" rows="1"></textarea>
-                                                    </div>
-                                                </div>
+                                                <h4>VITALS</h4>
                                                 <br>
-                                                <div class="row mb-15px">
-                                                    <label for="central_nervous_system_examination" class="form-label col-form-label col-md-3">Central Nervous System Examination</label>
-                                                    <div class="col-md-9">
-                                                        <textarea class="form-control mb-5px" id="central_nervous_system_examination" name="central_nervous_system_examination" rows="1"></textarea>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <div class="row mb-15px">
-                                                    <label for="cardiovascular_system_examination" class="form-label col-form-label col-md-3">Cardiovascular System Examination</label>
-                                                    <div class="col-md-9">
-                                                        <textarea class="form-control mb-5px" id="cardiovascular_system_examination" name="cardiovascular_system_examination" rows="1"></textarea>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <div class="row mb-15px">
-                                                    <label for="respiratory_system_examination" class="form-label col-form-label col-md-3">Respiratory System Examination</label>
-                                                    <div class="col-md-9">
-                                                        <textarea class="form-control mb-5px" id="respiratory_system_examination" name="respiratory_system_examination" rows="1"></textarea>
-                                                    </div>
-                                                </div><br>
-                                                <div class="row mb-15px">
-                                                    <label for="digestive_system_examination" class="form-label col-form-label col-md-3">Digestive System Examination</label>
-                                                    <div class="col-md-9">
-                                                        <textarea class="form-control mb-5px" id="digestive_system_examination" name="digestive_system_examination" rows="1"></textarea>
-                                                    </div>
-                                                </div><br>
-                                                <div class="row mb-15px">
-                                                    <label for="ear_nose_and_throat_examination" class="form-label col-form-label col-md-3">Ear, Nose and Throat Examination</label>
-                                                    <div class="col-md-9">
-                                                        <textarea class="form-control mb-5px" id="ear_nose_and_throat_examination" name="ear_nose_and_throat_examination" rows="1"></textarea>
-                                                    </div>
-                                                </div><br>
-                                                <div class="row mb-15px">
-                                                    <label for="musculoskeletal_system_examination" class="form-label col-form-label col-md-3">Musculoskeletal System Examination</label>
-                                                    <div class="col-md-9">
-                                                        <textarea class="form-control mb-5px" id="musculoskeletal_system_examination" name="musculoskeletal_system_examination" rows="1"></textarea>
-                                                    </div>
-                                                </div>
-                                                <hr>
-                                                <div class="row mb-15px">
-                                                    <label for="skin_examination" class="form-label col-form-label col-md-3">Skin Examination</label>
-                                                    <div class="col-md-9">
-                                                        <textarea class="form-control mb-5px" id="skin_examination" name="skin_examination" rows="1"></textarea>
-                                                    </div>
-                                                </div><br>
-                                                <div class="row mb-15px">
-                                                    <label for="findings" class="form-label col-form-label col-md-3">Findings</label>
-                                                    <div class="col-md-9">
-                                                        <textarea class="form-control mb-5px" id="findings" name="findings" rows="1"></textarea>
-                                                    </div>
-                                                </div><br>
-                                                <div class="row mb-15px">
-                                                    <label for="provisional_diagnosis" class="form-label col-form-label col-md-3">Provisional Diagnosis</label>
-                                                    <div class="col-md-9">
-                                                        <textarea class="form-control mb-5px" id="provisional_diagnosis" name="provisional_diagnosis" rows="1"></textarea>
-                                                    </div>
-                                                </div><br>
-                                                <div class="row mb-15px">
-                                                    <label for="treatment_plan" class="form-label col-form-label col-md-3">Treatment Plan</label>
-                                                    <div class="col-md-9">
-                                                        <textarea class="form-control mb-5px" id="treatment_plan" name="treatment_plan" rows="1"></textarea>
-                                                    </div>
-                                                </div><br>
-                                                <div class="row mb-15px">
-                                                    <label for="comment" class="form-label col-form-label col-md-3">Comment</label>
-                                                    <div class="col-md-9">
-                                                        <textarea class="form-control mb-5px" id="comment" name="comment" ></textarea>
-                                                    </div>
-                                                </div><br>
-                                                <div class="row mb-15px">
-                                                    <label for="name" class="form-label col-form-label col-md-3">Follow-Up Appointment</label>
-                                                    <div class="col-md-9">
-                                                        <input type="date" class="form-control mb-5px" name="follow_up_appointment" id="name" style="border:0; outline:0; background:transparent; border-bottom:1px solid black;"/>
-                                                    </div>
-                                                </div><br>
-                                                <div class="row mb-15px">
-                                                    <label for="cost_of_consultation" class="form-label col-form-label col-md-3">Cost of Consultation (&#8358;)</label>
-                                                    <div class="col-md-9">
-                                                        <input type="number" class="form-control mb-5px" name="cost_of_consultation" id="cost_of_consultation" style="border:0; outline:0; background:transparent; border-bottom:1px solid black;"/>
-                                                    </div>
-                                                </div>
-                                                <hr>
-                                                <h4>EXTRAS</h4>
                                                 <div class="row mb-15px">
                                                     <label for="weight" class="form-label col-form-label col-md-3">Weight</label>
                                                     <div class="col-md-9">
@@ -307,7 +219,98 @@
                                                     <div class="col-md-9">
                                                         <textarea class="form-control mb-5px" id="others" name="others"></textarea>
                                                     </div>
+                                                </div>
+                                                <hr>
+                                                <div class="row mb-15px">
+                                                    <label for="general_physical_examination" class="form-label col-form-label col-md-3">{{ 'Genral physical Examination' }}</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control mb-5px message-box" id="general_physical_examination" name="general_physical_examination" rows="1"></textarea>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row mb-15px">
+                                                    <label for="central_nervous_system_examination" class="form-label col-form-label col-md-3">Central Nervous System Examination</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control mb-5px" id="central_nervous_system_examination" name="central_nervous_system_examination" rows="1"></textarea>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row mb-15px">
+                                                    <label for="cardiovascular_system_examination" class="form-label col-form-label col-md-3">Cardiovascular System Examination</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control mb-5px" id="cardiovascular_system_examination" name="cardiovascular_system_examination" rows="1"></textarea>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row mb-15px">
+                                                    <label for="respiratory_system_examination" class="form-label col-form-label col-md-3">Respiratory System Examination</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control mb-5px" id="respiratory_system_examination" name="respiratory_system_examination" rows="1"></textarea>
+                                                    </div>
                                                 </div><br>
+                                                <div class="row mb-15px">
+                                                    <label for="digestive_system_examination" class="form-label col-form-label col-md-3">Digestive System Examination</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control mb-5px" id="digestive_system_examination" name="digestive_system_examination" rows="1"></textarea>
+                                                    </div>
+                                                </div><br>
+                                                <div class="row mb-15px">
+                                                    <label for="ear_nose_and_throat_examination" class="form-label col-form-label col-md-3">Ear, Nose and Throat Examination</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control mb-5px" id="ear_nose_and_throat_examination" name="ear_nose_and_throat_examination" rows="1"></textarea>
+                                                    </div>
+                                                </div><br>
+                                                <div class="row mb-15px">
+                                                    <label for="musculoskeletal_system_examination" class="form-label col-form-label col-md-3">Musculoskeletal System Examination</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control mb-5px" id="musculoskeletal_system_examination" name="musculoskeletal_system_examination" rows="1"></textarea>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <h4>EXAMINATIONS</h4>
+                                                <div class="row mb-15px">
+                                                    <label for="skin_examination" class="form-label col-form-label col-md-3">Skin Examination</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control mb-5px" id="skin_examination" name="skin_examination" rows="1"></textarea>
+                                                    </div>
+                                                </div><br>
+                                                <div class="row mb-15px">
+                                                    <label for="findings" class="form-label col-form-label col-md-3">Findings</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control mb-5px" id="findings" name="findings" rows="1"></textarea>
+                                                    </div>
+                                                </div><br>
+                                                <div class="row mb-15px">
+                                                    <label for="provisional_diagnosis" class="form-label col-form-label col-md-3">Provisional Diagnosis</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control mb-5px" id="provisional_diagnosis" name="provisional_diagnosis" rows="1"></textarea>
+                                                    </div>
+                                                </div><br>
+                                                <div class="row mb-15px">
+                                                    <label for="treatment_plan" class="form-label col-form-label col-md-3">Treatment Plan</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control mb-5px" id="treatment_plan" name="treatment_plan" rows="1"></textarea>
+                                                    </div>
+                                                </div><br>
+                                                <div class="row mb-15px">
+                                                    <label for="comment" class="form-label col-form-label col-md-3">Comment</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control mb-5px" id="comment" name="comment" ></textarea>
+                                                    </div>
+                                                </div><br>
+                                                <div class="row mb-15px">
+                                                    <label for="name" class="form-label col-form-label col-md-3">Follow-Up Appointment</label>
+                                                    <div class="col-md-9">
+                                                        <input type="date" class="form-control mb-5px" name="follow_up_appointment" id="name" style="border:0; outline:0; background:transparent; border-bottom:1px solid black;"/>
+                                                    </div>
+                                                </div><br>
+                                                <div class="row mb-15px">
+                                                    <label for="cost_of_consultation" class="form-label col-form-label col-md-3">Cost of Consultation (&#8358;)</label>
+                                                    <div class="col-md-9">
+                                                        <input type="number" class="form-control mb-5px" name="cost_of_consultation" id="cost_of_consultation" style="border:0; outline:0; background:transparent; border-bottom:1px solid black;"/>
+                                                    </div>
+                                                </div>
+                                                <br>
                                                 <div class="m-t-20 text-right">
                                                     <button type="submit" class="btn btn-primary submit-btn">Submit</button>
                                                 </div>
