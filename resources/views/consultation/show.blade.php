@@ -6,6 +6,20 @@
     <br>
     <div class="table-responsive">
         <table class="table">
+            <thead><h4 class="text-center">VITALS</h4></thead>
+            <tbody>
+                <tr><th> Weight </th><td> {{ isset($consultation->weight) ? $consultation->weight : 'Nil' }} </td></tr>
+                <tr><th> Height </th><td> {{ isset($consultation->height) ? $consultation->height : 'Nil' }} </td></tr>
+                <tr><th> BMI </th><td> {{ isset($consultation->bmi) ? $consultation->bmi : 'Nil' }} </td></tr>
+                <tr><th> Temperature </th><td> {{ isset($consultation->temperature) ? $consultation->temperature : 'Nil' }} </td></tr>
+                <tr><th> Blood Pressure </th><td> {{ isset($consultation->blood_pressure) ? $consultation->blood_pressure : 'Nil' }} </td></tr>
+                <tr><th> Pulse Rate </th><td> {{ isset($consultation->pulse_rate) ? $consultation->pulse_rate : 'Nil' }} </td></tr>
+                <tr><th> Oxygen Saturation </th><td> {{ isset($consultation->oxygen_saturation) ? $consultation->oxygen_saturation : 'Nil' }} </td></tr>
+                <tr><th> Pain Score </th><td> {{ isset($consultation->pain_score) ? $consultation->pain_score : 'Nil' }} </td></tr>
+            </tbody>
+        </table>
+        <table class="table">
+            <thead><h4 class="text-center">EXAMINATIONS</h4></thead>
             <tbody>
                 <tr><th> General Physical Examination </th><td> {{ isset($consultation->general_physical_examination) ? $consultation->general_physical_examination : 'Nil' }}</td></tr>
                 <tr><th> Central Nervous System Examination </th><td> {{ isset($consultation->central_nervous_system_examination) ? $consultation->central_nervous_system_examination : 'Nil' }} </td></tr>
@@ -26,18 +40,6 @@
             </tbody>
         </table>
 
-        <table class="table">
-            <thead><h4 class="text-center">EXTRAS</h4></thead>
-            <tbody>
-                <tr><th> Weight </th><td> {{ isset($consultation->weight) ? $consultation->weight : 'Nil' }} </td></tr>
-                <tr><th> Height </th><td> {{ isset($consultation->height) ? $consultation->height : 'Nil' }} </td></tr>
-                <tr><th> BMI </th><td> {{ isset($consultation->bmi) ? $consultation->bmi : 'Nil' }} </td></tr>
-                <tr><th> Temperature </th><td> {{ isset($consultation->temperature) ? $consultation->temperature : 'Nil' }} </td></tr>
-                <tr><th> Blood Pressure </th><td> {{ isset($consultation->blood_pressure) ? $consultation->blood_pressure : 'Nil' }} </td></tr>
-                <tr><th> Pulse Rate </th><td> {{ isset($consultation->pulse_rate) ? $consultation->pulse_rate : 'Nil' }} </td></tr>
-                <tr><th> Oxygen Saturation </th><td> {{ isset($consultation->oxygen_saturation) ? $consultation->oxygen_saturation : 'Nil' }} </td></tr>
-                <tr><th> Pain Score </th><td> {{ isset($consultation->pain_score) ? $consultation->pain_score : 'Nil' }} </td></tr>
-            </tbody>
-        </table>
+
     </div>
 @endsection

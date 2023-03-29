@@ -215,12 +215,13 @@
                                                     </div>
                                                 </div><br>
                                                 <div class="row mb-15px">
-                                                    <label for="oxygen_saturation" class="form-label col-form-label col-md-3">Others</label>
+                                                    <label for="others" class="form-label col-form-label col-md-3">Others</label>
                                                     <div class="col-md-9">
                                                         <textarea class="form-control mb-5px" id="others" name="others"></textarea>
                                                     </div>
                                                 </div>
                                                 <hr>
+                                                <h4>EXAMINATIONS</h4>
                                                 <div class="row mb-15px">
                                                     <label for="general_physical_examination" class="form-label col-form-label col-md-3">{{ 'Genral physical Examination' }}</label>
                                                     <div class="col-md-9">
@@ -266,8 +267,6 @@
                                                         <textarea class="form-control mb-5px" id="musculoskeletal_system_examination" name="musculoskeletal_system_examination" rows="1"></textarea>
                                                     </div>
                                                 </div>
-                                                <hr>
-                                                <h4>EXAMINATIONS</h4>
                                                 <div class="row mb-15px">
                                                     <label for="skin_examination" class="form-label col-form-label col-md-3">Skin Examination</label>
                                                     <div class="col-md-9">
