@@ -21,12 +21,11 @@
             <div class="alert alert-success">{{ \Session::get('flash_message') }}</div>
             @endif
 
-            <h4 style="padding:5px 2px 2px 10px;"> Patient Assessment </h4>
             <div class="col-md-9" style="margin-left:10px;">
                 <form method="POST" action="{{route('consultations.update',$consultation->id)}}" accept-charset="UTF-8">
                     {{ method_field('PATCH') }}
                     {{ csrf_field() }}
-                    <br>
+
                     <h4>VITALS</h4>
                     <br>
                     <div class="row mb-15px">
@@ -78,9 +77,80 @@
                         </div>
                     </div>
                     <hr>
+                    <h4>HISTORY</h4>
+                    <div class="row mb-15px">
+                        <label for="complaints_history" class="form-label col-form-label col-md-3">{{ 'History of Complaints' }}</label>
+                        <div class="col-md-9">
+                            <textarea class="form-control mb-5px" id="complaints_history" name="complaints_history">{{ isset($consultation->complaints_history) ? $consultation->complaints_history : ' '}}</textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row mb-15px">
+                        <label for="review_of_systems" class="form-label col-form-label col-md-3">{{ 'Review of Systems' }}</label>
+                        <div class="col-md-9">
+                            <textarea class="form-control mb-5px" id="review_of_systems" name="review_of_systems">{{ isset($consultation->review_of_systems) ? $consultation->review_of_systems : ' '}}</textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row mb-15px">
+                        <label for="medical_and_surgical_history" class="form-label col-form-label col-md-3">{{ 'Medical and Surgical History' }}</label>
+                        <div class="col-md-9">
+                            <textarea class="form-control mb-5px" id="medical_and_surgical_history" name="medical_and_surgical_history">{{ isset($consultation->medical_and_surgical_history) ? $consultation->medical_and_surgical_history : ' '}}</textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row mb-15px">
+                        <label for="drug_and_allergy_history" class="form-label col-form-label col-md-3">{{ 'Drug and Allergy History' }}</label>
+                        <div class="col-md-9">
+                            <textarea class="form-control mb-5px" id="drug_and_allergy_history" name="drug_and_allergy_history">{{ isset($consultation->drug_and_allergy_history) ? $consultation->drug_and_allergy_history : ' '}}</textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row mb-15px">
+                        <label for="obstetrics_and_gynecological_history" class="form-label col-form-label col-md-3">{{ 'Obstetrics and Gynecological  history' }}</label>
+                        <div class="col-md-9">
+                            <textarea class="form-control mb-5px" id="obstetrics_and_gynecological_history" name="obstetrics_and_gynecological_history">{{ isset($consultation->obstetrics_and_gynecological_history) ? $consultation->obstetrics_and_gynecological_history : ' '}}</textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row mb-15px">
+                        <label for="developmental_history" class="form-label col-form-label col-md-3">{{ 'Developmental History' }}</label>
+                        <div class="col-md-9">
+                            <textarea class="form-control mb-5px" id="developmental_history" name="developmental_history">{{ isset($consultation->developmental_history) ? $consultation->developmental_history : ' '}}</textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row mb-15px">
+                        <label for="immunization_history" class="form-label col-form-label col-md-3">{{ 'Immunization History' }}</label>
+                        <div class="col-md-9">
+                            <textarea class="form-control mb-5px" id="immunization_history" name="immunization_history">{{ isset($consultation->immunization_history) ? $consultation->immunization_history : ' '}}</textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row mb-15px">
+                        <label for="nutritional_history" class="form-label col-form-label col-md-3">{{ 'Nutritional History' }}</label>
+                        <div class="col-md-9">
+                            <textarea class="form-control mb-5px" id="nutritional_history" name="nutritional_history">{{ isset($consultation->nutritional_history) ? $consultation->nutritional_history : ' '}}</textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row mb-15px">
+                        <label for="family_and_social_history" class="form-label col-form-label col-md-3">{{ 'Family and Social History' }}</label>
+                        <div class="col-md-9">
+                            <textarea class="form-control mb-5px" id="family_and_social_history" name="family_and_social_history">{{ isset($consultation->family_and_social_history) ? $consultation->family_and_social_history : ' '}}</textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row mb-15px">
+                        <label for="spirituality" class="form-label col-form-label col-md-3">Spirituality</label>
+                        <div class="col-md-9">
+                            <input type="text" name="spirituality" class="form-control mb-5px" id="spirituality" style="border:0; outline:0; background:transparent; border-bottom:1px solid black;" value="{{ isset($consultation->spirituality) ? $consultation->spirituality : ' '}}"/>
+                        </div>
+                    </div>
+                    <hr>
                     <h4>EXAMINATIONS</h4>
                     <div class="row mb-15px">
-                        <label for="general_physical_examination" class="form-label col-form-label col-md-3">{{ 'Genral physical Examination' }}</label>
+                        <label for="general_physical_examination" class="form-label col-form-label col-md-3">{{ 'General physical Examination' }}</label>
                         <div class="col-md-9">
                             <textarea class="form-control mb-5px" id="general_physical_examination" name="general_physical_examination">{{ isset($consultation->general_physical_examination) ? $consultation->general_physical_examination : ' '}}</textarea>
                         </div>
@@ -124,7 +194,7 @@
                             <textarea class="form-control mb-5px" id="musculoskeletal_system_examination" name="musculoskeletal_system_examination">{{ isset($consultation->musculoskeletal_system_examination) ? $consultation->musculoskeletal_system_examination : ' '}}</textarea>
                         </div>
                     </div>
-                    <hr>
+                    <br>
                     <div class="row mb-15px">
                         <label for="skin_examination" class="form-label col-form-label col-md-3">Skin Examination</label>
                         <div class="col-md-9">
@@ -179,21 +249,21 @@
 @endsection
 @push('page_script')
 <script type="text/javascript">
-    const tx = document.getElementsByTagName("textarea");
-    for (let i = 0; i < tx.length; i++) {
-        tx[i].setAttribute("style", "height:" + (tx[i].scrollHeight) + "px;overflow-y:hidden;resize:none;box-sizing:border-box;width:100%;min-height:35px;padding:5px;background:transparent;border:0; outline:0;border-bottom:1px solid black;");
-        tx[i].addEventListener("input", OnInput, false);
-    }
-
-    function OnInput() {
-        this.style.height = 0;
-        this.style.height = (this.scrollHeight) + "px";
-    }
-
     $("document").ready(function(){
         setTimeout(function(){
             $("div.alert").remove();
         }, 5000);
+
+        const tx = document.getElementsByTagName("textarea");
+        for (let i = 0; i < tx.length; i++) {
+            tx[i].setAttribute("style", "height:" + (tx[i].scrollHeight) + "px;overflow-y:hidden;resize:none;box-sizing:border-box;width:100%;min-height:35px;padding:5px;background:transparent;border:0; outline:0;border-bottom:1px solid black;");
+            tx[i].addEventListener("input", OnInput, false);
+        }
+
+        function OnInput() {
+            this.style.height = 0;
+            this.style.height = (this.scrollHeight) + "px";
+        }
     });
 </script>
 @endpush

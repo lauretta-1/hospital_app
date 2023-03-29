@@ -19,6 +19,21 @@
             </tbody>
         </table>
         <table class="table">
+            <thead><h4 class="text-center">HISTORY</h4></thead>
+            <tbody>
+                <tr><th> History of Complaints </th><td> {{ isset($consultation->complaints_history) ? $consultation->complaints_history : 'Nil' }} </td></tr>
+                <tr><th> Review of Systems </th><td> {{ isset($consultation->review_of_systems) ? $consultation->review_of_systems : 'Nil' }} </td></tr>
+                <tr><th> Medical and Surgical History </th><td> {{ isset($consultation->medical_and_surgical_history) ? $consultation->medical_and_surgical_history : 'Nil' }} </td></tr>
+                <tr><th> Drug and Allergy History </th><td> {{ isset($consultation->drug_and_allergy_history) ? $consultation->drug_and_allergy_history : 'Nil' }} </td></tr>
+                <tr><th> Obstetrics and Gynecological History </th><td> {{ isset($consultation->obstetrics_and_gynecological_history) ? $consultation->obstetrics_and_gynecological_history : 'Nil' }} </td></tr>
+                <tr><th> Developmental History </th><td> {{ isset($consultation->developmental_history) ? $consultation->developmental_history : 'Nil' }} </td></tr>
+                <tr><th> Immunization History </th><td> {{ isset($consultation->immunization_history) ? $consultation->immunization_history : 'Nil' }} </td></tr>
+                <tr><th> Nutritional History </th><td> {{ isset($consultation->nutritional_history) ? $consultation->nutritional_history : 'Nil' }} </td></tr>
+                <tr><th> Family and Social History </th><td> {{ isset($consultation->family_and_social_history) ? $consultation->family_and_social_history : 'Nil' }} </td></tr>
+                <tr><th> Spirituality </th><td> {{ isset($consultation->spirituality) ? $consultation->spirituality : 'Nil' }} </td></tr>
+            </tbody>
+        </table>
+        <table class="table">
             <thead><h4 class="text-center">EXAMINATIONS</h4></thead>
             <tbody>
                 <tr><th> General Physical Examination </th><td> {{ isset($consultation->general_physical_examination) ? $consultation->general_physical_examination : 'Nil' }}</td></tr>
